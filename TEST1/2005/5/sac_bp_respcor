@@ -1,0 +1,8 @@
+sac << END
+r s1.sac
+rmean
+rtrend
+transfer from evalresp fname resp1 to vel freqlimits 0.005882 0.006667 0.200000 0.250000
+w s1.sac
+quit
+END

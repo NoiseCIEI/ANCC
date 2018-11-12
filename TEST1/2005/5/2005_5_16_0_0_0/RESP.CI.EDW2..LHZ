@@ -1,0 +1,146 @@
+#		<< IRIS SEED Reader, Release 5.1 >>
+#		
+#		======== CHANNEL RESPONSE DATA ========
+B050F03     Station:     EDW2
+B050F16     Network:     CI
+B052F03     Location:    ??
+B052F04     Channel:     LHZ
+B052F22     Start date:  2004,158,23:30:00
+B052F23     End date:    No Ending Time
+#		=======================================
+#		+               +--------------------------------------------+                +
+#		+               |   Response (Poles & Zeros),  EDW2 ch LHZ   |                +
+#		+               +--------------------------------------------+                +
+#		
+B053F03     Transfer function type:                A [Laplace Transform (Rad/sec)]
+B053F04     Stage sequence number:                 1
+B053F05     Response in units lookup:              M/S - VELOCITY in Meters per second
+B053F06     Response out units lookup:             V - VOLTAGE
+B053F07     A0 normalization factor:               5.68942E+08
+B053F08     Normalization frequency:               1
+B053F09     Number of zeroes:                      2
+B053F14     Number of poles:                       5
+#		Complex zeroes:
+#		  i  real          imag          real_error    imag_error
+B053F10-13    0  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+B053F10-13    1  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+#		Complex poles:
+#		  i  real          imag          real_error    imag_error
+B053F15-18    0 -1.130000E+03  0.000000E+00  0.000000E+00  0.000000E+00
+B053F15-18    1 -1.000000E+03  0.000000E+00  0.000000E+00  0.000000E+00
+B053F15-18    2 -5.020000E+02  0.000000E+00  0.000000E+00  0.000000E+00
+B053F15-18    3 -3.700000E-02 -3.700000E-02  0.000000E+00  0.000000E+00
+B053F15-18    4 -3.700000E-02  3.700000E-02  0.000000E+00  0.000000E+00
+#		
+#		+                  +---------------------------------------+                  +
+#		+                  |       Channel Gain,  EDW2 ch LHZ      |                  +
+#		+                  +---------------------------------------+                  +
+#		
+B058F03     Stage sequence number:                 1
+B058F04     Gain:                                  1.489750E+03
+B058F05     Frequency of gain:                     1.000000E+00 HZ
+B058F06     Number of calibrations:                0
+#		
+#		+               +-------------------------------------------+                 +
+#		+               |   Response (Coefficients),  EDW2 ch LHZ   |                 +
+#		+               +-------------------------------------------+                 +
+#		
+B054F03     Transfer function type:                D
+B054F04     Stage sequence number:                 2
+B054F05     Response in units lookup:              V - VOLTAGE
+B054F06     Response out units lookup:             COUNTS - DIGITAL UNIT in Counts
+B054F07     Number of numerators:                  0
+B054F10     Number of denominators:                0
+#		
+#		+                      +------------------------------+                       +
+#		+                      |   Decimation,  EDW2 ch LHZ   |                       +
+#		+                      +------------------------------+                       +
+#		
+B057F03     Stage sequence number:                 2
+B057F04     Input sample rate:                     1.000000E+00
+B057F05     Decimation factor:                     1
+B057F06     Decimation offset:                     0
+B057F07     Estimated delay (seconds):             0.000000E+00
+B057F08     Correction applied (seconds):          0.000000E+00
+#		
+#		+                  +---------------------------------------+                  +
+#		+                  |       Channel Gain,  EDW2 ch LHZ      |                  +
+#		+                  +---------------------------------------+                  +
+#		
+B058F03     Stage sequence number:                 2
+B058F04     Gain:                                  4.194300E+05
+B058F05     Frequency of gain:                     1.000000E+00 HZ
+B058F06     Number of calibrations:                0
+#		
+#		+                     +--------------------------------+                      +
+#		+                     |   FIR response,  EDW2 ch LHZ   |                      +
+#		+                     +--------------------------------+                      +
+#		
+B061F03     Stage sequence number:                 3
+B061F05     Symmetry type:                         A
+B061F06     Response in units lookup:              COUNTS - DIGITAL UNIT in Counts
+B061F07     Response out units lookup:             COUNTS - DIGITAL UNIT in Counts
+B061F08     Number of numerators:                  31
+#		Numerator coefficients:
+#		  i, coefficient
+B061F09       0  1.219929E-16
+B061F09       1  3.161921E-10
+B061F09       2 -4.314652E-08
+B061F09       3 -5.635558E-07
+B061F09       4 -1.267008E-04
+B061F09       5  3.658144E-03
+B061F09       6  1.675314E-04
+B061F09       7 -5.404505E-03
+B061F09       8  1.278609E-02
+B061F09       9 -1.803566E-02
+B061F09      10  1.473116E-02
+B061F09      11  3.226941E-03
+B061F09      12 -3.859694E-02
+B061F09      13  8.883527E-02
+B061F09      14 -1.482427E-01
+B061F09      15  2.177661E-01
+B061F09      16  8.099144E-01
+B061F09      17  1.245959E-01
+B061F09      18 -1.230407E-01
+B061F09      19  8.899753E-02
+B061F09      20 -4.850157E-02
+B061F09      21  1.425912E-02
+B061F09      22  6.896391E-03
+B061F09      23 -1.444342E-02
+B061F09      24  1.242861E-02
+B061F09      25 -6.568726E-03
+B061F09      26  1.522040E-03
+B061F09      27  3.142093E-03
+B061F09      28  3.656274E-05
+B061F09      29 -2.152995E-06
+B061F09      30 -2.597827E-07
+#		
+#		+                      +------------------------------+                       +
+#		+                      |   Decimation,  EDW2 ch LHZ   |                       +
+#		+                      +------------------------------+                       +
+#		
+B057F03     Stage sequence number:                 3
+B057F04     Input sample rate:                     1.000000E+00
+B057F05     Decimation factor:                     1
+B057F06     Decimation offset:                     0
+B057F07     Estimated delay (seconds):             1.593000E+01
+B057F08     Correction applied (seconds):          1.593000E+01
+#		
+#		+                  +---------------------------------------+                  +
+#		+                  |       Channel Gain,  EDW2 ch LHZ      |                  +
+#		+                  +---------------------------------------+                  +
+#		
+B058F03     Stage sequence number:                 3
+B058F04     Gain:                                  1.000000E+00
+B058F05     Frequency of gain:                     0.000000E+00 HZ
+B058F06     Number of calibrations:                0
+#		
+#		+                  +---------------------------------------+                  +
+#		+                  |   Channel Sensitivity,  EDW2 ch LHZ   |                  +
+#		+                  +---------------------------------------+                  +
+#		
+B058F03     Stage sequence number:                 0
+B058F04     Sensitivity:                           6.248470E+08
+B058F05     Frequency of sensitivity:              1.000000E+00 HZ
+B058F06     Number of calibrations:                0
+#		

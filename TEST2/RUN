@@ -1,0 +1,25 @@
+#!/bin/tcsh
+#
+# this script runs example test
+#
+# Compute cross-corelation functions for April 2005 and May 2005
+./cv_do_CO.csh 2005 4 5 >& cv_do_CO.csh.log
+cd 2005
+# Merge cross-correlation databases into single one in the MERGED_COR
+# directory witn the name COR_2005.4_2005.5
+# Create merge_list
+echo "4/5to150/COR" > merge_list
+echo "5/5to150/COR" >> merge_list
+../../bin/do_merge_cor.sh merge_list MERGED_COR COR_2005.4_2005.5 >& merge_cor.log
+# Postprocessing
+# update SAC headers
+../../bin/sac_update.sh MERGED_COR COR_2005.4_2005.5 >& sac_update.log
+# Create .ccwfdisc cross-correltion descriptor file 
+../../bin/mkccwfdisc MERGED_COR COR_2005.4_2005.5  > tmp.2
+# Sort by station names
+#sort -b +1.0 -2.0 +0.0 -1.0 +3.0 -4.0 +2.0 -3.0 tmp.2 > tmp.3
+sort -b -k 2,2 -k 1,1 -k 4,4 -k 3,3 tmp.2 > tmp.3
+# Assign identifier numbers in .ccwfdisc file
+../../bin/add_num tmp.3  MERGED_COR/COR_2005.1_2010.12.ccwfdisc
+rm -f tmp.1 tmp.2 tmp.3
+exit

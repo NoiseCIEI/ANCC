@@ -1,0 +1,15 @@
+This directory include an example of cross-correlatios
+data processing for two months, April 2005 and May 2005
+
+Directory contents:
+
+RUN  - main script which runs data processing
+4    - monthly workspace for Apr 2005
+4_in - SEED files for Apr 2005
+5    - monthly workspace for May 2005
+5_in - SEED files for May 2005
+MERGED_COR - final cross-correlatons product
+README     - this file
+xx.log     - log files 
+merge_list - list with relative paths to monthly databases
+cv_do_CO.csh - shell scripts

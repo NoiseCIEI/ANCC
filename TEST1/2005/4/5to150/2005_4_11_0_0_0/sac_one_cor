@@ -1,0 +1,11 @@
+sac << END
+r ft_TA.R04C.LHZ.SAC
+bp co 0.02 0.0667 n 4 p 2
+abs
+smooth mean h 40
+w a.avg 
+r ft_TA.R04C.LHZ.SAC
+divf a.avg
+w smooth.sac
+quit
+END

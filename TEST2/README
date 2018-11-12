@@ -1,0 +1,5 @@
+Try to run package on your computer.
+Start RUN script and compare results with results in ../TEST1
+directory. Results should be close.
+
+...> RUN
